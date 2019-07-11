@@ -44,6 +44,17 @@ $(function() {
 		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 5,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					arrows: false,
+					dots: true,
+				}
+			},
+		]
 	});
 
 	// collection-slider
@@ -58,7 +69,7 @@ $(function() {
 		arrows: true,
 		slidesToScroll: 1,
 		fade: true,
-		prevArrow: '<button type="button" class="slick-next">ПРЕДЫДУЩИЙ ОБРАЗ</button>',
+		prevArrow: '<button type="button" class="slick-prev">ПРЕДЫДУЩИЙ ОБРАЗ</button>',
 		nextArrow: '<button type="button" class="slick-next">СЛЕДУЮЩИЙ ОБРАЗ</button>',
 		responsive: [
 			{
@@ -72,6 +83,29 @@ $(function() {
 });
 
 	// imagery-slider
+
+	// catalog-slider
+
+	$("#catalog__slider").slick({
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 5,
+		dots: true,
+		arrows: true,
+		nextArrow: '<img class="slick-next" src="img/catalog/arrow-right.png"></img>',
+		rows: 2,
+		responsive: [
+			{
+				breakpoint: 1520,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+		]
+	});
+
+	// catalog-slider
 
 
 });
