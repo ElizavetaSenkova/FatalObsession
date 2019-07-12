@@ -25,6 +25,7 @@
 		"gulp-util": "^3.0.8"
 	},
 	"dependencies": {
+		"magic-grid": "^3.2.4",
 		"slick-carousel": "^1.8.1"
 	}
 }
