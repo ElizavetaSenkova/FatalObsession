@@ -138,6 +138,7 @@ $(function() {
 	// catalog-slider
 
 
+	// blog-grid
 	let magicGrid = new MagicGrid({
 		container: ".grid-container",
 		animate: true,
@@ -146,7 +147,8 @@ $(function() {
 		useMin: true
 	});
 
-		magicGrid.listen();
+	magicGrid.listen();
+	// blog-grid
 		
 	// menu
 
