@@ -81,20 +81,16 @@
 			&__watch-all
 				margin-left: unset
 				margin: 0 auto
+			&__images-wrap
+				img
+					max-width: 100%
 
 		.preview
 			&__inner
 				max-width: 992px
 			&__title-bottom
 				font-size: 120px
-				line-height: 120px
-			&__title
-				padding-left: 210px
-			&__text
-				margin-left: auto
-
-
-		
+				line-height: 120px	
 
 
 // ≥992px
@@ -156,9 +152,9 @@
 		
 		.slip
 			&__text-wrap
-				order: 1
+				order: 3
 			&__title-wrap
-				order: 2
+				order: 1
 			&__slider-wrap
 				order: 2
 			.slick-track
@@ -166,20 +162,15 @@
 			.slider-nav .slick-list .slick-track .slick-slide img
 				width: 80px
 				margin: 0 auto
+			&__text
+				padding-top: 20px
+			&__title
+				text-align: center
 
 		.catalog
 			.slick-next
-				top: 98%
-				left: 54%
-
-
-@media (max-width: 780px)
-	.page-content
-
-		.catalog
-			.slick-next
-				top: 98.5%
-				left: 56.5%
+				top: 96.5%
+				left: 56%
 
 
 // ≥768px
@@ -216,21 +207,6 @@
 			.slick-prev
 				right: 458px
 
-
-@media (max-width: 580px)
-	.page-content
-
-		.catalog
-			.slick-next
-				top: 98.8%
-				left: 68%
-			&__slide
-				padding-right: 0
-
-		.perfect
-			&__slide
-				padding-right: 0
-
 // ≥576px
 +media-breakpoint-down(xs)
 	.page-header
@@ -244,7 +220,7 @@
 
 		.company
 			&__title
-				margin-left: 0
+				font-size: 30px
 
 		.preview
 			&__number
@@ -259,14 +235,37 @@
 		.collections
 			&__see-more
 				width: 100%
+			&__slide-wrap
+				padding-left: 76px
+
+		.slip 
+			.slider-nav .slick-list .slick-track .slick-slide img
+				width: 60px
+
+@media (max-width: 532px)
+	.page-content
+
+		.imagery
+			&__title
+				font-size: 30px
+			.slick-arrow
+				font-size: 14px
+			&__info-title
+				font-size: 30px
 
 @media (max-width: 480px)
 	.page-content
 
-		.catalog
+		.imagery
+			&__card
+				flex-wrap: wrap
+				img
+					margin: 0 auto
+					margin-bottom: 30px
+			&__watch-all
+				width: 100%
 			.slick-next
-				top: 98.4%
-				left: 70%
+				top: -34px
 
 @media (max-width: 410px)
 	.page-content
@@ -278,14 +277,6 @@
 				right: 102px
 			.slick-prev
 				right: 260px
-
-@media (max-width: 380px)
-	.page-content
-
-		.catalog
-			.slick-next
-				top: 98.3%
-				left: 74%
 
 			
 

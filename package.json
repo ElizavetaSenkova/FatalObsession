@@ -26,6 +26,7 @@
 	},
 	"dependencies": {
 		"magic-grid": "^3.2.4",
+		"magnific-popup": "^1.1.0",
 		"slick-carousel": "^1.8.1"
 	}
 }

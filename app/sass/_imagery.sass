@@ -1,4 +1,6 @@
 .imagery
+	padding-bottom: 50px
+
 	position: relative
 	&__title
 		margin-top: 35px
@@ -24,6 +26,7 @@
 
 		background-color: inherit
 		border: none
+		cursor: pointer
 		&::before
 			content: ""
 
@@ -43,8 +46,6 @@
 		&::before
 			right: -22px
 			transform: rotate(180deg)
-	&__images-inner
-		margin-right: 30px
 	&__images-small
 		display: flex
 		margin: 0
@@ -102,7 +103,7 @@
 		width: 430px
 		padding: 15px 0
 		margin-left: auto
-		margin-top: 192px
+		margin-top: 170px
 
 		font-size: 24px
 		line-height: 24px
@@ -110,6 +111,19 @@
 		text-decoration: underline
 		text-align: center
 
-		background-color: black
-
+		background-color: #191919
+	&__slide
+		img
+			max-width: 100%
+	&-image__slide-small
+		img
+			width: 100%
+			padding-right: 10px
+	&-image__slide-big
+		img
+			margin: 0 auto
+			padding-bottom: 20px
+	.slider-nav-imagery
+		.slick-list
+			padding: 0 !important
 	

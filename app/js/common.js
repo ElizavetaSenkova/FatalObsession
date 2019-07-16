@@ -55,7 +55,7 @@ $(function() {
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -89,7 +89,24 @@ $(function() {
 				}
 			},
 		]
-});
+	});
+
+	$('.slider-for-imagery').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-imagery',
+	});
+
+	$('.slider-nav-imagery').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		asNavFor: '.slider-for-imagery',
+		// dots: true,
+		centerMode: true,
+		focusOnSelect: true
+	});
 
 	// imagery-slider
 
@@ -119,10 +136,21 @@ $(function() {
 				}
 			},
 			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					rows: 1,
+				}
+			},
+			{
 				breakpoint: 780,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
+					rows: 1,
+					dots: false,
+					arrows: false,
 				}
 			},
 			{
@@ -130,6 +158,9 @@ $(function() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					rows: 1,
+					dots: false,
+					arrows: false,
 				}
 			},
 		]
@@ -220,5 +251,20 @@ $(function() {
 
 	// perfect-slider
 
+	// popup-gallery
+	$(document).ready(function() {
+		$('.popup-gallery').magnificPopup({
+			delegate: 'div',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+		});
+	});
+	// popup-gallery
 
 });
