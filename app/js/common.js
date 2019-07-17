@@ -167,19 +167,6 @@ $(function() {
 	});
 
 	// catalog-slider
-
-
-	// blog-grid
-	let magicGrid = new MagicGrid({
-		container: ".grid-container",
-		animate: true,
-		gutter: 30,
-		static: true,
-		useMin: true
-	});
-
-	magicGrid.listen();
-	// blog-grid
 		
 	// menu
 
@@ -252,6 +239,7 @@ $(function() {
 	// perfect-slider
 
 	// popup-gallery
+
 	$(document).ready(function() {
 		$('.popup-gallery').magnificPopup({
 			delegate: 'div',
@@ -265,6 +253,29 @@ $(function() {
 			},
 		});
 	});
+
 	// popup-gallery
+
+	// blog-grid
+
+	try {
+
+		let magicGrid = new MagicGrid({
+			container: ".grid-container",
+			animate: true,
+			gutter: 30,
+			static: true,
+			useMin: true
+		});
+
+		magicGrid.listen();
+	
+	} catch (err) {
+	
+		
+	
+	}
+	
+	// blog-grid
 
 });
